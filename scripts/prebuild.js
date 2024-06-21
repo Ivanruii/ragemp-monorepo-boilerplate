@@ -8,7 +8,7 @@ const __dirname = path.dirname(__filename);
 const serverBuildPath = path.resolve(__dirname, "../server-build");
 const serverFilesPath = path.resolve(__dirname, "../server-files");
 const directoriesToCreate = [
-  path.resolve(serverBuildPath, "client-packages", "cef"),
+  path.resolve(serverBuildPath, "client_packages", "cef"),
   path.resolve(serverBuildPath, "packages"),
 ];
 
