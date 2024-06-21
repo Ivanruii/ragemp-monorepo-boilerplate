@@ -4,10 +4,10 @@ export default defineConfig({
   build: {
     rollupOptions: {
       input: {
-        main: "src/main.ts",
+        main: "src/index.ts",
       },
       output: {
-        entryFileNames: "main.js",
+        entryFileNames: "index.js",
       },
     },
   },
