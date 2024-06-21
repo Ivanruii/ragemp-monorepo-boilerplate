@@ -47,7 +47,7 @@ Before you begin, ensure you have the following installed on your machine:
    pnpm run start:server
    ```
 
-### ⚙️ Future Additions
+## ⚙️ Future Additions
 
 - Add a better architecture for the server, client and cef.
 - Add connection to a database.
