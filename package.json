@@ -4,6 +4,7 @@
   "scripts": {
     "prebuild": "node scripts/prebuild.js",
     "build": "turbo build",
+    "start:server": "cd server-build && ragemp-server.exe",
     "dev": "turbo dev",
     "lint": "turbo lint",
     "format": "prettier --write \"**/*.{ts,tsx,md}\""
