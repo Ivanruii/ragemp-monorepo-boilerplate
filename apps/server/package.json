@@ -10,12 +10,15 @@
     "lint": "eslint \"src/**/*.ts\""
   },
   "dependencies": {
-    "@repo/ui": "workspace:*"
+    "@repo/ui": "workspace:*",
+    "dotenv": "^16.4.5",
+    "sequelize": "^6.37.3"
   },
   "devDependencies": {
     "@ragempcommunity/types-server": "^2.1.8",
     "@repo/eslint-config": "workspace:*",
     "@repo/typescript-config": "workspace:*",
+    "@types/node": "^20.14.7",
     "eslint": "^8.57.0",
     "typescript": "^5.3.3",
     "vite": "^5.1.4"
