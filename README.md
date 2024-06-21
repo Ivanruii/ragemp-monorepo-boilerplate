@@ -1,33 +1,47 @@
-# `Turborepo` Vite starter
+# RAGE Multiplayer Monorepo Boilerplate (0.1.0)
 
-This is an official starter Turborepo.
+Welcome to the RAGE Multiplayer (RAGE MP) Monorepo Boilerplate! This repository provides a starting point for setting up a RAGE MP server with a monorepo structure, making it easier to manage and scale your game server project.
 
-## Using this example
+## 🛠️ Features
 
-Run the following command:
+- **Monorepo Structure:** Organize your server, client, and cef code in a single repository.
+- **TypeScript Support:** Write your scripts in TypeScript for better code quality and maintainability.
+- **React Support:** Using react to create the cef.
+- **Modular Architecture:** Easily add and manage new features or packages.
+- **Built-in Scripting:** Preconfigured scripts to set the ragemp structure automatically. 
 
-```sh
-npx create-turbo@latest -e with-vite
-```
+## 🚀 Getting Started
 
-## What's inside?
+### 🚨 Prerequisites
 
-This Turborepo includes the following packages and apps:
+Before you begin, ensure you have the following installed on your machine:
 
-### Apps and Packages
+- [Node.js](https://nodejs.org/) (v20.9.0 or upper recommended, may not work with previous versions)
+- [pnpm](https://pnpm.io/es/)
 
-- `docs`: a vanilla [vite](https://vitejs.dev) ts app
-- `web`: another vanilla [vite](https://vitejs.dev) ts app
-- `@repo/ui`: a stub component & utility library shared by both `web` and `docs` applications
-- `@repo/eslint-config`: shared `eslint` configurations
-- `@repo/typescript-config`: `tsconfig.json`s used throughout the monorepo
+### ⚙️ Installation
 
-Each package and app is 100% [TypeScript](https://www.typescriptlang.org/).
+1. **Clone the repository:**
 
-### Utilities
+    ```sh
+    git clone https://github.com/yourusername/ragemp-monorepo-boilerplate.git
+    cd ragemp-monorepo-boilerplate
+    ```
 
-This Turborepo has some additional tools already setup for you:
+2. **Install dependencies:**
 
-- [TypeScript](https://www.typescriptlang.org/) for static type checking
-- [ESLint](https://eslint.org/) for code linting
-- [Prettier](https://prettier.io) for code formatting
+    ```sh
+    npm install
+    # or
+    yarn install
+    ```
+
+3. **Add your ragemp server files:**
+
+    - Create a directory called **server-files** and add your ragemp server files, you should delete the **client-packages** and **packages** folders.
+
+## **README.md is still WIP ⚒️**
+
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
