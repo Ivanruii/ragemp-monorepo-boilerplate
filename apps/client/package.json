@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite --clearScreen false",
-    "build": "tsc && vite build && mv dist/* ../../server-build/client-packages/",
+    "build": "tsc && vite build && mv dist/* ../../server-build/client_packages/",
     "preview": "vite preview",
     "lint": "eslint \"src/**/*.ts\""
   },
