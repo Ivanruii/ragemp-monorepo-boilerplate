@@ -8,7 +8,7 @@ Welcome to the RAGE Multiplayer (RAGE MP) Monorepo Boilerplate! This repository 
 - **TypeScript Support:** Write your scripts in TypeScript for better code quality and maintainability.
 - **React Support:** Using react to create the cef.
 - **Modular Architecture:** Easily add and manage new features or packages.
-- **Built-in Scripting:** Preconfigured scripts to set the ragemp structure automatically. 
+- **Built-in Scripting:** Preconfigured scripts to set the ragemp structure automatically.
 
 ## 🚀 Getting Started
 
@@ -23,22 +23,33 @@ Before you begin, ensure you have the following installed on your machine:
 
 1. **Clone the repository:**
 
-    ```sh
-    git clone https://github.com/yourusername/ragemp-monorepo-boilerplate.git
-    cd ragemp-monorepo-boilerplate
-    ```
+   ```sh
+   git clone https://github.com/yourusername/ragemp-monorepo-boilerplate.git
+   cd ragemp-monorepo-boilerplate
+   ```
 
 2. **Install dependencies:**
 
-    ```sh
-    npm install
-    # or
-    yarn install
-    ```
+   ```sh
+   pnpm i
+   ```
 
 3. **Add your ragemp server files:**
 
-    - Create a directory called **server-files** and add your ragemp server files, you should delete the **client-packages** and **packages** folders.
+   - Create a directory called **server-files** and add your ragemp server files, you should delete the **client-packages** and **packages** folders.
+
+4. **Start your RageMP server:**
+
+   ```sh
+   pnpm run start:server
+   ```
+
+### ⚙️ Future Additions
+
+    - Add a better architecture for the server, client and cef.
+    - Add connection to a database.
+    - Dockerize the monorepository.
+    - SASS support.
 
 ## **README.md is still WIP ⚒️**
 
