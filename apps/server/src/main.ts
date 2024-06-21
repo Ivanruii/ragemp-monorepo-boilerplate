@@ -1,1 +1,1 @@
-import "./core/database/connection.db";
+console.log("Hi, this is server!");

@@ -5,7 +5,7 @@
   ],
   "compilerOptions": {
     "types": [
-      "./node_modules/@ragempcommunity/types-server"
+      "node_modules/@ragempcommunity/types-server"
     ]
   }
 }
