@@ -13,6 +13,7 @@
     "@repo/ui": "workspace:*"
   },
   "devDependencies": {
+    "@ragempcommunity/types-cef": "^2.1.8",
     "@repo/eslint-config": "workspace:*",
     "@repo/typescript-config": "workspace:*",
     "eslint": "^8.57.0",

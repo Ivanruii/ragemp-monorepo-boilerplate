@@ -30,6 +30,9 @@ importers:
         specifier: workspace:*
         version: link:../../packages/ui
     devDependencies:
+      '@ragempcommunity/types-cef':
+        specifier: ^2.1.8
+        version: 2.1.8
       '@repo/eslint-config':
         specifier: workspace:*
         version: link:../../packages/config-eslint
@@ -52,28 +55,9 @@ importers:
         specifier: workspace:*
         version: link:../../packages/ui
     devDependencies:
-      '@repo/eslint-config':
-        specifier: workspace:*
-        version: link:../../packages/config-eslint
-      '@repo/typescript-config':
-        specifier: workspace:*
-        version: link:../../packages/config-typescript
-      eslint:
-        specifier: ^8.57.0
-        version: 8.57.0
-      typescript:
-        specifier: ^5.3.3
-        version: 5.3.3
-      vite:
-        specifier: ^5.1.4
-        version: 5.1.4
-
-  apps/docs:
-    dependencies:
-      '@repo/ui':
-        specifier: workspace:*
-        version: link:../../packages/ui
-    devDependencies:
+      '@ragempcommunity/types-client':
+        specifier: ^2.1.8
+        version: 2.1.8
       '@repo/eslint-config':
         specifier: workspace:*
         version: link:../../packages/config-eslint
@@ -96,28 +80,9 @@ importers:
         specifier: workspace:*
         version: link:../../packages/ui
     devDependencies:
-      '@repo/eslint-config':
-        specifier: workspace:*
-        version: link:../../packages/config-eslint
-      '@repo/typescript-config':
-        specifier: workspace:*
-        version: link:../../packages/config-typescript
-      eslint:
-        specifier: ^8.57.0
-        version: 8.57.0
-      typescript:
-        specifier: ^5.3.3
-        version: 5.3.3
-      vite:
-        specifier: ^5.1.4
-        version: 5.1.4
-
-  apps/web:
-    dependencies:
-      '@repo/ui':
-        specifier: workspace:*
-        version: link:../../packages/ui
-    devDependencies:
+      '@ragempcommunity/types-server':
+        specifier: ^2.1.8
+        version: 2.1.8
       '@repo/eslint-config':
         specifier: workspace:*
         version: link:../../packages/config-eslint
@@ -349,6 +314,15 @@ packages:
   '@pkgjs/parseargs@0.11.0':
     resolution: {integrity: sha512-+1VkjdD0QBLPodGrJUeqarH8VAIvQODIbwh9XpP5Syisf7YoQgsJKPNFoqqLQlu+VQ/tVSshMR6loPMn8U+dPg==}
     engines: {node: '>=14'}
+
+  '@ragempcommunity/types-cef@2.1.8':
+    resolution: {integrity: sha512-8j6Qy4BFfibBLghb212ma50RZ9HFwADgzjS042xOvs16ziZbzVf9F5nEuehBF4feMeYrwW3+nBs/hgDDa2sPaQ==}
+
+  '@ragempcommunity/types-client@2.1.8':
+    resolution: {integrity: sha512-l7V0DOkSsTixJofcSINUhkR70LTaHdPkjtpLyFbhVEVXzEOJxMfYRC9dYXGhkwjZX+46ubZan3lSUZpywObLvQ==}
+
+  '@ragempcommunity/types-server@2.1.8':
+    resolution: {integrity: sha512-evAXoLnFvyHFtusVmpjd4OPcc+gJNp3rVWA056ss5eOc1dqFiehuGGAmFAzcvcWnUuMR9PmL8LSXc2jWR9N4pw==}
 
   '@rollup/rollup-android-arm-eabi@4.5.2':
     resolution: {integrity: sha512-ee7BudTwwrglFYSc3UnqInDDjCLWHKrFmGNi4aK7jlEyg4CyPa1DCMrZfsN1O13YT76UFEqXz2CoN7BCGpUlJw==}
@@ -1218,6 +1192,12 @@ snapshots:
 
   '@pkgjs/parseargs@0.11.0':
     optional: true
+
+  '@ragempcommunity/types-cef@2.1.8': {}
+
+  '@ragempcommunity/types-client@2.1.8': {}
+
+  '@ragempcommunity/types-server@2.1.8': {}
 
   '@rollup/rollup-android-arm-eabi@4.5.2':
     optional: true

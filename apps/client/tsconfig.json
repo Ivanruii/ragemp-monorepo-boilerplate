@@ -1,4 +1,11 @@
 {
   "extends": "@repo/typescript-config/vite.json",
-  "include": ["src"]
+  "include": [
+    "src"
+  ],
+  "compilerOptions": {
+    "types": [
+      "node_modules/@ragempcommunity/types-client/"
+    ]
+  }
 }
