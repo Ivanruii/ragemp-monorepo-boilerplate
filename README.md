@@ -46,10 +46,10 @@ Before you begin, ensure you have the following installed on your machine:
 
 ### ⚙️ Future Additions
 
-    - Add a better architecture for the server, client and cef.
-    - Add connection to a database.
-    - Dockerize the monorepository.
-    - SASS support.
+- Add a better architecture for the server, client and cef.
+- Add connection to a database.
+- Dockerize the monorepository.
+- SASS support.
 
 ## **README.md is still WIP ⚒️**
 
