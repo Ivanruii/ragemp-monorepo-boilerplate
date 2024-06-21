@@ -2,6 +2,9 @@
 
 Welcome to the RAGE Multiplayer (RAGE MP) Monorepo Boilerplate! This repository provides a starting point for setting up a RAGE MP server with a monorepo structure, making it easier to manage and scale your game server project.
 
+> [!IMPORTANT]  
+> This is not a complete gamemode, just a starting point for those developers who want to start a ragemp server in a simple way.
+
 ## 🛠️ Features
 
 - **Monorepo Structure:** Organize your server, client, and cef code in a single repository.
