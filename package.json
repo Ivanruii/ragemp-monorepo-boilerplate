@@ -1,6 +1,7 @@
 {
   "private": true,
   "type": "module",
+  "version": "0.2.0",
   "scripts": {
     "prebuild": "node scripts/prebuild.js",
     "postbuild": "node scripts/postbuild.js",
