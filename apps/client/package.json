@@ -9,9 +9,7 @@
     "preview": "vite preview",
     "lint": "eslint \"src/**/*.ts\""
   },
-  "dependencies": {
-    "@repo/ui": "workspace:*"
-  },
+  "dependencies": {},
   "devDependencies": {
     "@ragempcommunity/types-client": "^2.1.8",
     "@repo/eslint-config": "workspace:*",
