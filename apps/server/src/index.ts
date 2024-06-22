@@ -1,1 +1,3 @@
-console.log("Hi, this is server!");
+import { authenticate } from "./core/database/connection.database";
+
+authenticate();
