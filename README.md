@@ -50,7 +50,7 @@ Before you begin, ensure you have the following installed on your machine:
      ```
 
 > [!WARNING]
-> I have installed Postgres. If you want to use a different database system, you must uninstall mine and install yours. More information in [https://sequelize.org/docs/v6/getting-started/](sequelize getting started docs.)
+> I have installed Postgres. If you want to use a different database system, you must uninstall mine and install yours. More information in sequelize getting started docs: https://sequelize.org/docs/v6/getting-started/
 
 4. **Add your ragemp server files:**
 
