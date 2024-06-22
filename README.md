@@ -37,11 +37,26 @@ Before you begin, ensure you have the following installed on your machine:
    pnpm i
    ```
 
-3. **Add your ragemp server files:**
+3. **Add your database connection:**
+
+   - Go to `apps > server` and create a **.env** file with the following data:
+
+     ```env
+     VITE_DB_HOST= // Database IP
+     VITE_DB_NAME= // Database name
+     VITE_DB_USERNAME= // Database username
+     VITE_DB_PASSWORD= // Database password
+     VITE_DB_DIALECT= // Database dialect (Availabe databases with sequelize: Postgres, MySQL, MariaDB, SQLite, Microsoft SQL Server, Oracle)
+     ```
+
+   > [!WARNING]  
+   > I have installed Postgres. If you want to use a different database system, you must uninstall mine and install yours. More information in [https://sequelize.org/docs/v6/getting-started/](sequelize getting started docs.)
+
+4. **Add your ragemp server files:**
 
    - Create a directory called **server-files** and add your ragemp server files, you should delete the **client-packages** and **packages** folders.
 
-4. **Start your RageMP server:**
+5. **Start your RageMP server:**
 
    ```sh
    pnpm run start:server
