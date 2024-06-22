@@ -3,6 +3,7 @@
   "type": "module",
   "scripts": {
     "prebuild": "node scripts/prebuild.js",
+    "postbuild": "node scripts/postbuild.js",
     "build": "turbo build",
     "start:server": "cd server-build && ragemp-server.exe",
     "dev": "turbo dev",

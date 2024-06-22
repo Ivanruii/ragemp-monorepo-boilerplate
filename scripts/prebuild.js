@@ -12,6 +12,9 @@ const directoriesToCreate = [
   path.resolve(serverBuildPath, "packages", "server"),
 ];
 
+const appsPath = path.resolve(__dirname, "../apps");
+const dependenciesJsonPath = path.resolve(__dirname, "../dependencies.json");
+
 const packageJsonContent = {
   name: "server-build",
   version: "1.0.0",
@@ -50,6 +53,39 @@ async function copyDirectory(source, destination) {
   );
 }
 
+async function collectDependencies() {
+  const appsDirectories = await fs.promises.readdir(appsPath, {
+    withFileTypes: true,
+  });
+  const dependencies = {};
+
+  for (const dir of appsDirectories) {
+    if (dir.isDirectory()) {
+      const packageJsonPath = path.join(appsPath, dir.name, "package.json");
+
+      if (fs.existsSync(packageJsonPath)) {
+        const packageJson = JSON.parse(
+          await fs.promises.readFile(packageJsonPath, "utf8")
+        );
+
+        if (packageJson.dependencies) {
+          for (const [dep, version] of Object.entries(
+            packageJson.dependencies
+          )) {
+            dependencies[dep] = version;
+          }
+        }
+      }
+    }
+  }
+
+  await fs.promises.writeFile(
+    dependenciesJsonPath,
+    JSON.stringify(dependencies, null, 2),
+    "utf8"
+  );
+}
+
 async function setupBuild() {
   try {
     if (fs.existsSync(serverBuildPath)) {
@@ -64,8 +100,9 @@ async function setupBuild() {
 
     await copyDirectory(serverFilesPath, serverBuildPath);
 
-    // Create package.json in server-build directory
     await createPackageJson();
+
+    await collectDependencies();
 
     console.log("Build setup completed successfully.");
   } catch (err) {

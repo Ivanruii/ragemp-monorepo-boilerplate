@@ -25,10 +25,6 @@ importers:
         version: 2.0.4
 
   apps/cef:
-    dependencies:
-      '@repo/ui':
-        specifier: workspace:*
-        version: link:../../packages/ui
     devDependencies:
       '@ragempcommunity/types-cef':
         specifier: ^2.1.8
@@ -50,10 +46,6 @@ importers:
         version: 5.1.4
 
   apps/client:
-    dependencies:
-      '@repo/ui':
-        specifier: workspace:*
-        version: link:../../packages/ui
     devDependencies:
       '@ragempcommunity/types-client':
         specifier: ^2.1.8
@@ -75,10 +67,6 @@ importers:
         version: 5.1.4
 
   apps/server:
-    dependencies:
-      '@repo/ui':
-        specifier: workspace:*
-        version: link:../../packages/ui
     devDependencies:
       '@ragempcommunity/types-server':
         specifier: ^2.1.8
@@ -112,21 +100,6 @@ importers:
         version: 9.1.0(eslint@8.57.0)
 
   packages/config-typescript: {}
-
-  packages/ui:
-    devDependencies:
-      '@repo/eslint-config':
-        specifier: workspace:*
-        version: link:../config-eslint
-      '@repo/typescript-config':
-        specifier: workspace:*
-        version: link:../config-typescript
-      eslint:
-        specifier: ^8.57.0
-        version: 8.57.0
-      typescript:
-        specifier: ^5.3.3
-        version: 5.3.3
 
 packages:
 
