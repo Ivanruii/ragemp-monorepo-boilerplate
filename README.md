@@ -69,6 +69,7 @@ Before you begin, ensure you have the following installed on your machine:
 - [ ] Dockerize the monorepository.
 - [ ] SASS support.
 - [ ] Add testing (probably vitest).
+- [ ] Add a system to test the operation of the boilerplate, to serve as an example for anyone to follow from there (Login and registration system).
 
 ## **README.md is still WIP ⚒️**
 
