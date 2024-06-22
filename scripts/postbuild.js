@@ -44,7 +44,7 @@ async function installDependencies() {
     }
   } catch (error) {
     console.error("Error during postbuild:", error);
-    process.exit(1); // Terminar el proceso con código de error
+    process.exit(1);
   }
 }
 
