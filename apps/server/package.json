@@ -9,13 +9,17 @@
     "preview": "vite preview",
     "lint": "eslint \"src/**/*.ts\""
   },
-  "dependencies": {},
   "devDependencies": {
     "@ragempcommunity/types-server": "^2.1.8",
     "@repo/eslint-config": "workspace:*",
     "@repo/typescript-config": "workspace:*",
+    "@rollup/plugin-commonjs": "^26.0.1",
+    "@types/node": "^20.14.8",
     "eslint": "^8.57.0",
     "typescript": "^5.3.3",
     "vite": "^5.1.4"
+  },
+  "dependencies": {
+    "colorette": "^2.0.20"
   }
 }

@@ -1,14 +1,6 @@
 import { defineConfig } from "vite";
+import { node } from "./plugins/node";
 
 export default defineConfig({
-  build: {
-    rollupOptions: {
-      input: {
-        main: "src/index.ts",
-      },
-      output: {
-        entryFileNames: "index.js",
-      },
-    },
-  },
+  plugins: [node()],
 });
