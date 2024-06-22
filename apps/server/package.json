@@ -14,12 +14,16 @@
     "@repo/eslint-config": "workspace:*",
     "@repo/typescript-config": "workspace:*",
     "@rollup/plugin-commonjs": "^26.0.1",
+    "@rollup/plugin-node-resolve": "^15.2.3",
     "@types/node": "^20.14.8",
     "eslint": "^8.57.0",
     "typescript": "^5.3.3",
     "vite": "^5.1.4"
   },
   "dependencies": {
-    "colorette": "^2.0.20"
+    "dotenv": "^16.4.5",
+    "pg": "^8.12.0",
+    "pg-hstore": "^2.3.4",
+    "sequelize": "^6.37.3"
   }
 }

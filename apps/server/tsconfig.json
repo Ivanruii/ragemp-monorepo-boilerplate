@@ -6,6 +6,6 @@
   "compilerOptions": {
     "types": [
       "./node_modules/@ragempcommunity/types-server"
-    ]
+    ],
   }
 }

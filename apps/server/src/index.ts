@@ -1,3 +1,3 @@
-import { blue } from "colorette";
+import { authenticate } from "./core/database/connection.database";
 
-console.log(blue("Hi, this is server!"));
+authenticate();
