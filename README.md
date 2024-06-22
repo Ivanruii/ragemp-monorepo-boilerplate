@@ -49,8 +49,8 @@ Before you begin, ensure you have the following installed on your machine:
      VITE_DB_DIALECT= // Database dialect (Availabe databases with sequelize: Postgres, MySQL, MariaDB, SQLite, Microsoft SQL Server, Oracle)
      ```
 
-   > [!WARNING]  
-   > I have installed Postgres. If you want to use a different database system, you must uninstall mine and install yours. More information in [https://sequelize.org/docs/v6/getting-started/](sequelize getting started docs.)
+> [!WARNING]
+> I have installed Postgres. If you want to use a different database system, you must uninstall mine and install yours. More information in [https://sequelize.org/docs/v6/getting-started/](sequelize getting started docs.)
 
 4. **Add your ragemp server files:**
 
