@@ -11,3 +11,7 @@ interface ImportMetaEnv {
 interface ImportMeta {
   readonly env: ImportMetaEnv;
 }
+
+interface PlayerMp extends PlayerMp {
+  loggedIn: boolean;
+}

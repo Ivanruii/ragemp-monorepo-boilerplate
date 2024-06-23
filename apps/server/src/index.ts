@@ -1,3 +1,2 @@
-import { authenticate } from "./core/database/connection.database";
-
-authenticate();
+import "./resources";
+import "./core";
