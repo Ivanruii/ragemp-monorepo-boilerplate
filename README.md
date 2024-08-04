@@ -31,6 +31,8 @@ Before you begin, ensure you have the following installed on your machine:
    cd ragemp-monorepo-boilerplate
    ```
 
+   (You can also use this repo as a template in github)
+
 2. **Install dependencies:**
 
    ```sh
