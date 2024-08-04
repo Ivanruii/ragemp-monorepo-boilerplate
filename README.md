@@ -64,13 +64,13 @@ Before you begin, ensure you have the following installed on your machine:
 
 ## ⚙️ Future Additions
 
-- [ ] Add a better architecture for the server, client and cef.
+- [x] ~Add a better architecture for the server, client and cef.~
 - [x] ~Add connection to a database.~
 - [ ] Dockerize the monorepository.
 - [ ] SASS support.
 - [ ] Add testing (probably vitest).
-- [ ] Add a system to test the operation of the boilerplate, to serve as an example for anyone to follow from there (Login and registration system).
-- [ ] Add an event management system between CEF, client and server.
+- [x] ~Add a system to test the operation of the boilerplate, to serve as an example for anyone to follow from there (Login and registration system).~
+- [x] ~Add an event management system between CEF, client and server.~
 
 ## **README.md is still WIP ⚒️**
 
