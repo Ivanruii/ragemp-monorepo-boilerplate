@@ -13,6 +13,7 @@
     "@ragempcommunity/types-server": "^2.1.8",
     "@repo/eslint-config": "workspace:*",
     "@repo/typescript-config": "workspace:*",
+    "@repo/events-names": "workspace:*",
     "@rollup/plugin-commonjs": "^26.0.1",
     "@rollup/plugin-node-resolve": "^15.2.3",
     "@types/node": "^20.14.8",

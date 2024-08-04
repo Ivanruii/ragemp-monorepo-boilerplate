@@ -12,6 +12,7 @@
   "dependencies": {},
   "devDependencies": {
     "@ragempcommunity/types-client": "^2.1.8",
+    "@repo/events-names": "workspace:*",
     "@repo/eslint-config": "workspace:*",
     "@repo/typescript-config": "workspace:*",
     "eslint": "^8.57.0",

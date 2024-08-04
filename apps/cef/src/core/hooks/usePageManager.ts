@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import rpc from "rage-rpc";
+import { CEF_EVENTS } from "@repo/events-names";
 
 type UIEventData = {
   page: string;
@@ -23,10 +24,10 @@ const usePageManager = () => {
       }
     };
 
-    rpc.register("cef::ui::pageManager", handlePageManager);
+    rpc.register(CEF_EVENTS.UI.PAGE_MANAGER, handlePageManager);
 
     return () => {
-      rpc.unregister("cef::ui::pageManager");
+      rpc.unregister(CEF_EVENTS.UI.PAGE_MANAGER);
     };
   }, []);
 

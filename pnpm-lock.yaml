@@ -39,6 +39,9 @@ importers:
 
   apps/cef:
     dependencies:
+      '@repo/events-names':
+        specifier: workspace:*
+        version: link:../../packages/events-names
       react:
         specifier: ^18.3.1
         version: 18.3.1
@@ -75,6 +78,10 @@ importers:
         version: 5.1.4(@types/node@20.14.8)
 
   apps/client:
+    dependencies:
+      '@repo/events-names':
+        specifier: workspace:*
+        version: link:../../packages/events-names
     devDependencies:
       '@ragempcommunity/types-client':
         specifier: ^2.1.8
@@ -97,6 +104,9 @@ importers:
 
   apps/server:
     dependencies:
+      '@repo/events-names':
+        specifier: workspace:*
+        version: link:../../packages/events-names
       dotenv:
         specifier: ^16.4.5
         version: 16.4.5
@@ -151,6 +161,8 @@ importers:
         version: 9.1.0(eslint@8.57.0)
 
   packages/config-typescript: {}
+
+  packages/events-names: {}
 
 packages:
 

@@ -1,10 +1,11 @@
 import rpc from "rage-rpc";
+import { CLIENT_EVENTS, SERVER_EVENTS, CEF_EVENTS } from "@repo/events-names";
 
 const browser = mp.browsers.new("package://cef/index.html");
 
-mp.events.add("client::login::display", (value: boolean) => {
+mp.events.add(CLIENT_EVENTS.LOGIN.DISPLAY, (value: boolean) => {
   rpc
-    .callBrowser(browser, "cef::ui::pageManager", {
+    .callBrowser(browser, CEF_EVENTS.UI.PAGE_MANAGER, {
       page: "login",
       value: value,
     })
@@ -17,10 +18,10 @@ mp.events.add("client::login::display", (value: boolean) => {
 });
 
 rpc.register(
-  "client::login::sendData",
+  CLIENT_EVENTS.LOGIN.SEND_DATA,
   (data: { username: string; password: string }) => {
     mp.events.callRemote(
-      "server::login::receiveData",
+      SERVER_EVENTS.LOGIN.RECEIVE_DATA,
       data.username,
       data.password
     );

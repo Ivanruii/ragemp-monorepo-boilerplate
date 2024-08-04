@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import rpc from "rage-rpc";
+import { CLIENT_EVENTS, CEF_EVENTS } from "@repo/events-names";
 
 const LoginPage: React.FC = () => {
   const [username, setUsername] = useState("");
@@ -7,18 +8,18 @@ const LoginPage: React.FC = () => {
   const [message, setMessage] = useState("");
 
   useEffect(() => {
-    rpc.register("cef::login::response", (response: string) => {
+    rpc.register(CEF_EVENTS.LOGIN.RESPONSE, (response: string) => {
       setMessage(response);
     });
 
     return () => {
-      rpc.unregister("cef::login::response");
+      rpc.unregister(CEF_EVENTS.LOGIN.RESPONSE);
     };
   }, []);
 
   const handleLogin = () => {
     rpc
-      .callClient("client::login::sendData", { username, password })
+      .callClient(CLIENT_EVENTS.LOGIN.SEND_DATA, { username, password })
       .catch((err) => {
         setMessage("Login failed");
         console.error(err);
