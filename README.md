@@ -70,6 +70,7 @@ Before you begin, ensure you have the following installed on your machine:
 - [ ] SASS support.
 - [ ] Add testing (probably vitest).
 - [ ] Add a system to test the operation of the boilerplate, to serve as an example for anyone to follow from there (Login and registration system).
+- [ ] Add an event management system between CEF, client and server.
 
 ## **README.md is still WIP ⚒️**
 
