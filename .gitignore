@@ -9,8 +9,7 @@ dist-ssr
 .cache
 server/dist
 public/dist
+server-build
 server-files/*
-server-build/*
 !server-files/.gitkeep
-!server-build/.gitkeep
 dependencies.json
