@@ -12,6 +12,7 @@ Welcome to the RAGE Multiplayer (RAGE MP) Monorepo Boilerplate! This repository 
 - **React Support:** Using react to create the cef.
 - **Modular Architecture:** Easily add and manage new features or packages.
 - **Built-in Scripting:** Preconfigured scripts to set the ragemp structure automatically.
+- **Events names package:** A monorepo package with enums to prevent mistakes when naming events.
 
 ## 🚀 Getting Started
 
@@ -56,7 +57,7 @@ Before you begin, ensure you have the following installed on your machine:
 
 4. **Add your ragemp server files:**
 
-   - Create a directory called **server-files** and add your ragemp server files, you should delete the **client-packages** and **packages** folders.
+   - Add your ragemp server files to the **server-files** directory, you should delete the **client-packages** and **packages** folders.
 
 5. **Start your RageMP server:**
 
