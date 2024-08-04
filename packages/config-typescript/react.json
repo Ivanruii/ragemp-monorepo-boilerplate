@@ -1,0 +1,6 @@
+{
+  "extends": "./vite.json",
+  "compilerOptions": {
+    "jsx": "react-jsx"
+  }
+}

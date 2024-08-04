@@ -19,5 +19,11 @@
     "turbo": "^2.0.4"
   },
   "packageManager": "pnpm@9.1.3",
-  "name": "ragemp-boilerplate"
+  "name": "ragemp-boilerplate",
+  "dependencies": {
+    "cef": "^0.3.3",
+    "client": "^0.0.1",
+    "rage-rpc": "^0.4.0",
+    "server": "^1.0.39"
+  }
 }
