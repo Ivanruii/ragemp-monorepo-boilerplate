@@ -59,7 +59,19 @@ Before you begin, ensure you have the following installed on your machine:
 
    - Add your ragemp server files to the **server-files** directory, you should delete the **client-packages** and **packages** folders.
 
-5. **Start your RageMP server:**
+5. **Run build command:**
+
+   ```sh
+   pnpm run build
+   ```
+
+   The contents of your dists folders will be automatically moved to their corresponding directory after the build.
+
+   - Server build will go to **_server-build>packages>server_**
+   - Client will go to **_server-build>packages_client_**
+   - Cef build will go to **_server-build>client_packages>cef_**
+
+6. **Start your RageMP server:**
 
    ```sh
    pnpm run start:server
