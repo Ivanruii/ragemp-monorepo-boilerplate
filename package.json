@@ -6,7 +6,7 @@
     "prebuild": "node scripts/prebuild.js",
     "postbuild": "node scripts/postbuild.js",
     "build": "turbo build",
-    "start:server": "cd server-files && ragemp-server.exe",
+    "start:server": "cd server-build && ragemp-server.exe",
     "dev": "turbo dev",
     "lint": "turbo lint",
     "format": "prettier --write \"**/*.{ts,tsx,md}\""
